@@ -1,0 +1,13 @@
+def sums(divisor_list, number):
+  '''
+  Function to take all the divisor list and finds
+  the sum of all the numbers below the given number
+  disisible by any one of the divisor list
+  '''
+  sum = 0
+  for i in xrange(1000):
+    if i % 5 == 0 or i % 3 == 0:
+      sum += i
+    i += 1
+  return sum
+print sums()
